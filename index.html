@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]汪如祥-前端开发工程师/深圳or广州</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 750px) {
+                    .switch {
+                        position: relative;
+                        display: inline-block !important;
+                        width: 60px;
+                        height: 34px;
+                    }
+
+                    .switch input {
+                        display: none;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #1abc9c;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <!-- <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpeg" onload="loading()">
+                </section>
+
+                <h1 class="name">汪如祥</h1>
+                <h4 class="info-job">前端开发工程师 / 深圳or广州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>汪如祥 / 男 / 28岁（1995.01）</span>
+                    </li>
+                    <li>
+                        <label>现居住地</label>
+                        <span>深圳市宝安区</span>
+                    </li>
+                    <li>
+                        <label>在职状态</label>
+                        <span>在职-两周内到岗</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:17512007984" target="_blank">175-1200-7984</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:ruxiang.wang@qq.com" target="_blank">ruxiang.wang@qq.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="https://www.cnblogs.com/wangruxiang/" target="_blank">博客园</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/orgs/wangruxiang/dashboard" target="_blank">wangruxiang</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点（不限于）
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Vue</label></label></label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>React</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>微信小程序</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Node.js</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr />
+                <img src="assets/images/wechatQR.jpeg"
+                    style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>江西农业大学 - 软件工程（统招-本科）</span>
+                            <time>2013.9-2017.7</time>
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]TCL实业（深圳TCL新技术有限公司）－前端开发主任级工程师</span>
+                            <time>2020.3 - 至今 </time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>负责运营平台的开发，迭代，优化；</li>
+                            <li>负责微信小程序，公众号业务开发；</li>
+                            <li>负责电视端H5页面开发；</li>
+                            <li>负责移动端H5页面开发；</li>
+                            <li>负责数据可视化业务开发；</li>
+                            <li>负责用户体验优化，技术演进与创新；</li>
+                            <li>负责公司前端技术的选型和框架设计；</li>
+                            <li>负责公司通用组件库的完善；</li>
+                            <li>负责相关设计文档的输出和整理；</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]深圳市网安计算机安全检测技术有限公司－研发经理(前端组) </span>
+                            <time>2017.02 - 2020.03</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>了解并根据项目需求设计原型图以及利用Photoshop进行界面设计产出源文件PSD；</li>
+                            <li>对公司移动端和 PC 端的项目进行代码开发、维护以及升级；</li>
+                            <li>负责团队管理；负责网站前端架构的建立和实施，主导前端框架开发，并据此制定合理有效的开发规范；</li>
+                            <li>负责梳理和优化前端开发流程，搭建高效集成的前端开发环境，提高前端开发质量和效率；</li>
+                            <li>把握前端技术发展潮流，牵头前端新技术的研究，并用新技术推动业务发展；</li>
+                            <li>对项目的进行需求分析以及项目的性能优化；</li>
+                            <li>调用后台接口实现数据交互；</li>
+                            <li>微信公众号开发以及微信小程序的代码开发；</li>
+                            <li>自主实现项目的人机交互设计，提高用户体验；</li>
+                            <li>根据项目的具体要求采取优雅降级的方式兼容 IE、Firefox、Chrome等 浏览器；</li>
+                            <li>负责部门前端组任务分配以及技术难点攻破等；</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历3]香港资讯卫视有限公司－前端开发工程师 </span>
+                            <time>2016.08 - 2017.02</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>略；</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望
+                </h2>
+                <hr />
+                <ol>
+                    <li>1、熟悉掌握vue、elementUI、mintUI，可以高效利用vue全家桶完成项目需求；</li>
+                    <li>2、熟悉掌握 React、Redux、React Router，可以快速融入团队,并且拥有独立开发能力；</li>
+                    <li>3、熟悉掌握微信公众号开发以及微信小程序的代码开发；</li>
+                    <li>4、熟悉bootstrap、Echarts、uni-app、mpvue、iview、vant、ant design以及sass和less等；</li>
+                    <li>5、熟悉 JavaScript，且有良好的文档撰写能力；</li>
+                    <li>6、熟悉 HTML5 和 CSS3，语义合理，结构清晰，能够还原视觉设计，并兼容业界承认的主流浏览器；</li>
+                    <li>7、熟悉 jQuery 框架，通过 jQuery 框架完成所需要的设计，且具有良好的文档阅读能力和实践能力；</li>
+                    <li>8、熟练掌握pxcook、VS Code、HBuilder、FlashFXP等工具,能熟练完成psd切图，并用前端代码百分百还原设计图；</li>
+                    <li>9、熟练掌握MockingBot、Axure和PhotoShop，可以用其设计并制作原型；</li>
+                    <li>10、熟悉主流浏览器的兼容性问题，并有实际的解决方案；</li>
+                    <li>11、了解 Node.js，能实现常用的中间层服务；</li>
+                    <li>12、了解AngularJS，如果公司需求,可以快速上手,步入工作；</li>
+                </ol>
+                <p>
+                    [对前端开发具有浓厚的兴趣，并拥有较为广阔的互联网视野，能够快速融入工作环境，能够承受较大的工作压力]<span class="mark-txt">“改变能改变的，接受不能接受的”</span>是我给自己总结的“十三字箴言”，共勉。
+                </p>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目（部分）
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]儿童平板launcher（TCL Kids）</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2022.01-2023.02</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：React+Umijs+AntDesign+dva等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]TCL Kids业务线，可通过该项目的cms系统设置下发资源内容至TCL教育平板，并且还可真的不同平板终端下发特定的页面布局，并且在用户同意下可收集部分信息图表化展示在该系统中，内含家长模式等
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的迭代需求独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]国内广告业务（广告管理系统+广告投放平台+广告物料审核平台）</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2021.08-2023.02</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：React+Umijs+AntDesign+dva等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]TCL国内广告业务，可在这些cms平台进行广告内容、广告下发策略、广告物料的第三方审核等功能
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的迭代需求独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]海外电子说明书（cms+tv）</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2021.07-2022.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：CMS（React+Umijs+AntDesign+dva等前端前沿技术）+ TV（Vue2+Vuex+Vue-router+Axios+Webpack 4+Vant+Sass等前端前沿技术）</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]帮助用户在电视使用时减少用户疑惑，给出模块问题和常见问题解决方案
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的需求以及设计师提供的GUI独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                                <br />
+                                5．TV侧可访问链接：https://hwebook-html-o.api.leiniao.com/ebook/index.html#/home?zone=US&clientType=TCL-NA-RTD51M-S1&language=en；CMS侧部署至内网地址https://eu-idsaas-o.api.leiniao.com/page/cms-electronicManual-overseas/#/：
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目4]T有料（微信小程序+管理系统CMS）</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2021.07-2021.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：微信小程序（WXML+WXSS+JavaScript+JSON+WeUI等前端前沿技术）+ 管理系统CMS（React+Umijs+AntDesign+dva等前端前沿技术）</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]建立TCL内部员工物料申请流程，方便内部员工在线申请所需的物料，同时也能根据物料消耗情况精准补货，以及精准了解物料消耗情况等
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 1 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的需求以及设计师提供的GUI独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目5]智能会议管理系统+Tmeet（微信小程序）</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2021.01-2021.08</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：Tmeet微信小程序（mpvue+vant+flyjs等前端前沿技术）+ 管理系统CMS（Vue+Vuex+Vue-router+elementUI+Axios等前端前沿技术）</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]TCL商用设备会议机终端会议在线预约、会议室在线管理、会议人员管理、会议在线纪要下发等功能；
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的需求以及设计师提供的GUI独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目6]商显移动端H5</span>
+                            <!-- <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2021.06 – 2022.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：Vue+Vue-router+Sass+Vuex+Vant+Axios等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]TCL会议机终端设备上面涉及的H5页面，其中功能包括图片分享、投票、计分器、文字提取等
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 1 位后端开发同学一起
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．根据产品经理提出的需求以及设计师提供的GUI独立进行前端界面的代码实现；
+                                <br />
+                                2．根据后端同事提供接口独立进行数据的联调；
+                                <br />
+                                3．根据TCL内部部署方案独立进行前端项目的测试环境部署；
+                                <br />
+                                4．开发完成后根据测试用例独立进行自测通过后进行提测，遗漏bug问题的修复以及通过测试后的正式环境部署；
+                                <br />
+                                5．其中投票小功能相关访问地址：扫码发起投票：https://cloud.eshowcloud.com/comments/#/vote?token=10&language=cn；扫码参与投票：https://cloud.eshowcloud.com/comments/#/voteJoin?token=10&language=cn；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目7]广东北源律师事务所官网</span>
+                            <span class="link">
+                                <a href="http://www.beiyuanlawyer.com" target="_blank">Demo</a>
+                            </span>
+                            <time>2019.11-2019.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：vue-cli + vue3.0 + vuex + vue-router + axios + element-ui等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]按照公司要求宣传并介绍广东北源律师事务所所代码开发的官网
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．网址(http://www.beiyuanlawyer.com)，可通过网址查看该项目；
+                                <br />
+                                2．使用vue全家桶（vue-cli + vue3.0 + vuex + vue-router + axios + element-ui）进行项目代码开发；
+                                <br />
+                                3．使用公司内网SVN对代码进行统一管理与更新，避免代码出现问题；
+                                <br />
+                                4．根据设计图源文件运用CSS/HTML技术100%代码实现；
+                                <br />
+                                5．运用webpack打包工具对代码进行打包处理并且通过FlashFXP工具对代码进行远程发布；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目8]汕头网警微站（微信公众号+后台管理系统）</span>
+                            <!-- <span class="link">
+                                <a href="http://www.beiyuanlawyer.com" target="_blank">Demo</a>
+                            </span> -->
+                            <time>2017.08-2017.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：vue-cli + vue3.0 + vuex + vue-router + axios + element-ui等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]因公司与汕头网警有项目合作,所以帮助汕头网警做公众号以后后台数据管理系统
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．使用Photoshop对原型图进行设计得到PSD设计原稿；
+                                <br />
+                                2．运用 CSS3 实现项目动画需求；
+                                <br />
+                                3．页面结构组件化，常用组件封装，方便复用；
+                                <br />
+                                4．解决多端适配问题，并有适当的解决方案；
+                                <br />
+                                5．关注微信公众号“汕头网警巡查执法”可以了解查看项目详情；
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目9]第三方证据保全系统宣传网站</span>
+                            <span class="link">
+                                <a href="http://www.azbq.org" target="_blank">Demo</a>
+                            </span>
+                            <time>2017.07-2017.08</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>前端技术栈：HTML+CSS+JavaScript+JQuery+Ajax等前端前沿技术</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]第三方证据保全系统宣传网站.集团旗下子公司的官网
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [项目职责]
+                                <br />
+                                1．项目的构思和设计；
+                                <br />
+                                2．使用Photoshop对设计原稿进行切图获取项目过程中需要的图片素材；
+                                <br />
+                                3．根据设计图100%代码实现项目界面；
+                                <br />
+                                4．使用 CSS3 新特性设计并实现项目界面的动画效果以及交互；
+                                <br />
+                                5．使用渐进增强的构建方法,配合百分比布局开发页面；
+                                <br />
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <h3>
+                            <span>[项目4]肿瘤流行病数据可视化</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>201X.X-201X.X</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现常见肿瘤流行病数据多维度可视化展示、数据透视及分析
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 1 位
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]分析项目需求，清洗并整理相关数据(扩展第三方知识组织系统和 Google trends 数据)，并用
+                                <mark>D3.js</mark> 和
+                                <mark>ECharts</mark> 进行图形化展示以及实现简易自动分析 功能
+                                <br />
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作品取得第二届共享杯国家级竞赛“特等奖”(1/1500)
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </section>
+
+        </section>
+    </article>
+    <footer class="footer">
+        <p>2023 © ruxiang.wang@tcl.com  文档最后更新时间为
+            <time>2023年03月04日</time>.
+        </p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://www.cnblogs.com/wangruxiang/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
